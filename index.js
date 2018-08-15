@@ -69,8 +69,17 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  
 }
 
 function placeOrder(cardNumber) {
   // write your code here
+  if (typeof cardNumber == 'number') {
+    cart.splice(0, cart.length)
+    
+    return `Your total cost is $${totalPrice}, which will be charged to the card ${cardNumber}.`
+  } 
+  else {
+    return 'Sorry, we don'\t have a credit card on file for you'
+  }
 }
