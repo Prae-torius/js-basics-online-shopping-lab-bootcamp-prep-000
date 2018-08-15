@@ -41,8 +41,9 @@ function viewCart() {
       
       return `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`  
     }
-  return `Your shopping cart is empty.`;
   }
+  
+  return `Your shopping cart is empty.`;
 }
 
 
