@@ -51,7 +51,7 @@ console.log(getCart())
 
 function total() {
   // write your code here
-  let totalPrice
+  let totalPrice = 0
   if (totalPrice === 0) {
     totalPrice = cart.itemPrice
   }
