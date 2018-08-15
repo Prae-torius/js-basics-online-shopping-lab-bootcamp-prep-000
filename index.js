@@ -82,8 +82,8 @@ function placeOrder(cardNumber) {
   } 
   
   else {
-    cart.splice(0, cart.length)
+    
     return 'Sorry, we don\'t have a credit card on file for you.'
   }
-  
+  cart.splice(0, cart.length)
 }
