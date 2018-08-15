@@ -27,10 +27,10 @@ function viewCart() {
     if (cart.length > 1 && cart.length < 3) {
       message.push(`${cart[i + 1].itemName} at $${cart[i + 1].itemPrice}`)
     
-    return `In your cart, you have ${message[i]}, and ${message[i + 1]}.`;
+      return `In your cart, you have ${message[i]}, and ${message[i + 1]}.`;
+    } 
     
-      
-    } else if (cart.length >= 3) {
+    else if (cart.length >= 3) {
       message.push(`${cart[i + 1].itemName} at $${cart[i + 1].itemPrice}`)  
       message.push(`${cart[i + 2].itemName} at $${cart[i + 2].itemPrice}`)
       
