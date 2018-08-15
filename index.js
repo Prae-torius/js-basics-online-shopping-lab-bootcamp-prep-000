@@ -54,7 +54,7 @@ function total() {
   let totalPrice = 0
   for (let cartIndex = 0; cartIndex < cart.length; cartIndex++) {
     if (totalPrice === 0) {
-      totalPrice = cart[cartIndex].price
+      totalPrice = cart[cartIndex].itemPrice
     }
   }
   }
