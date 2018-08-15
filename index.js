@@ -34,7 +34,7 @@ function viewCart() {
       message.push(`${cart[i + 1].itemName} at $${cart[i + 1].itemPrice}`)  
       message.push(`${cart[i + 2].itemName} at $${cart[i + 2].itemPrice}`)
       
-      return `In your cart, you have ${message[i]}, ${message[i + 1]} and ${message[i + 2]}.`
+      return `In your cart, you have ${message[i]}, ${message[i + 1]}, and ${message[i + 2]}.`
     } 
     
     else if (i === 0) {
