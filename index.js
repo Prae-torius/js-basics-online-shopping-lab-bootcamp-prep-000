@@ -42,7 +42,6 @@ function viewCart() {
       return `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`  
     }
   }
-  
   return `Your shopping cart is empty.`;
 }
 
@@ -54,9 +53,12 @@ function total() {
   let totalPrice = 0
   
   for (let i = 0; i < cart.length; i++) {
+    
     if (totalPrice === 0) {
       totalPrice = cart[i].itemPrice
-    } else if (i < cart.length) {
+    } 
+    
+    else if (i < cart.length) {
       totalPrice += cart[i].itemPrice
     }
   }
@@ -66,6 +68,7 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   for (let i = 0; i < cart.length; i++) {
+    
     if (item === cart[i].itemName) {
       cart.splice([i], 1)
     }
@@ -76,6 +79,7 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
   let returnMessage
+  
   if (typeof cardNumber == 'number') {
     
     returnMessage = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
