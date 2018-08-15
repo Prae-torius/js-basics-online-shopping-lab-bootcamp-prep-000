@@ -57,7 +57,6 @@ function total() {
       totalPrice = cart[cartIndex].itemPrice
     }
   }
-  }
   return totalPrice
 }
 
