@@ -40,9 +40,11 @@ function viewCart() {
     else if (i === 0) {
       
       return `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`  
-  }
+    }
   return `Your shopping cart is empty.`;
 }
+
+
 console.log(getCart())
 
 function total() {
