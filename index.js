@@ -20,14 +20,22 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   const message = [];
+  
   for (let i = 0; i < cart.length; i++){
     message.push(`${cart[i].itemName} at $${cart[i].itemPrice},`)
+    
     if (cart.length > 1) {
       message.push(`${cart[i + 1].itemName} at $${cart[i + 1].itemPrice},`)
+    
     return `In your cart, you have ${message[i]} and ${message[i + 1]}.`;
-    } else if (i === 0) {
+    } 
+    
+    else if (i === 0) {
+      
       return `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`  
-    }
+    } 
+    
+    else 
   }
   return `Your shopping cart is empty.`;
 }
