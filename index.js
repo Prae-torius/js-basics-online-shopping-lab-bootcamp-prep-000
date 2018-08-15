@@ -35,6 +35,11 @@ console.log(getCart())
 
 function total() {
   // write your code here
+  let totalPrice
+  if (totalPrice === 0) {
+    totalPrice = cart.itemPrice
+  }
+  return totalPrice
 }
 
 function removeFromCart(item) {
