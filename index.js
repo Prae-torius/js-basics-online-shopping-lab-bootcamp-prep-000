@@ -54,14 +54,10 @@ function total() {
   let totalPrice = 0
   
   for (let cartIndex = 0; cartIndex < cart.length; cartIndex++) {
-    
-    if (totalPrice === 0) {
-      totalPrice = cart[cartIndex].itemPrice
-    } 
-    
-    else {
+    totalPrice = cart[cartIndex].itemPrice
+    if (cartIndex < cart.length) {
       totalPrice += cart[cartIndex].itemPrice
-      }
+    } 
   }
   
   return totalPrice
