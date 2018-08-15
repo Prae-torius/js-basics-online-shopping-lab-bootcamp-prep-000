@@ -22,7 +22,7 @@ function viewCart() {
   const message = [];
   
   for (let i = 0; i < cart.length; i++){
-    message.push(`${cart[i].itemName} at $${cart[i].itemPrice},`)
+    message.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
     
     if (cart.length > 1) {
       message.push(`${cart[i + 1].itemName} at $${cart[i + 1].itemPrice}`)
