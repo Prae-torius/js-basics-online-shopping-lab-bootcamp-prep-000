@@ -20,7 +20,7 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   const message = [];
-  for (const i = 0; i < cart.length; i++){
+  for (let i = 0; i < cart.length; i++){
     message.push(`${cart[i].itemName} at $${cart[i].itemPrice},`)
     if (cart.length > 1) {
       message.push(`${cart[i + 1].itemName} at $${cart[i + 1].itemPrice},`)
